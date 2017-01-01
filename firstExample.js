@@ -6,7 +6,7 @@ function* generator () {
 
 const it = generator();
 it.next();
-
+console.log("back to caller");
 setTimeout(function(){
 	it.next();
 }, 5000);
